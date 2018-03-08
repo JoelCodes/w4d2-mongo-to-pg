@@ -12,7 +12,7 @@
     <ul>
       <% urls.forEach((url) => {%>
       <li>
-        <a href='/u/<%=url.shortURL%>'><%= url.short_url + ": " + url.long_url %></a>
+        <a href='/u/<%=url.short_url%>'><%= url.short_url + ": " + url.long_url %></a>
         <form action="/urls/<%= url.short_url %>/delete" method="POST">
         <a href="/urls/<%= url.short_url %>">Edit</a>
         <button>Delete</button>
